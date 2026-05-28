@@ -1,0 +1,281 @@
+.why-choose-us {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.reason-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+  text-align: center;
+}
+
+.reason-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.reason-card:hover .reason-icon {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.reason-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.reason-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.reason-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.reason-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.reason-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.reason-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.reason-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.reason-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+}
+
+.reason-card p {
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.reason-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reason-details li {
+  padding: 0.5rem 0;
+  color: var(--text-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.reason-details .dot {
+  color: var(--accent-color);
+  font-size: 0.75rem;
+}
+
+/* Stats Section */
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.stat::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+
+.stat:last-child::before {
+  display: none;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  animation: countUp 2s ease-out;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Trust Section */
+.trust-section {
+  text-align: center;
+}
+
+.trust-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.trust-badges {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.badge:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.badge-icon {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.badge span:last-child {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 3rem 0;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .reason-card {
+    padding: 1.5rem;
+  }
+
+  .reason-icon {
+    font-size: 2.5rem;
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .trust-badges {
+    grid-template-columns: 1fr;
+  }
+
+  .badge {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reason-card {
+    padding: 1.25rem;
+  }
+
+  .reason-icon {
+    font-size: 2rem;
+  }
+
+  .reason-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .reason-card p {
+    font-size: 0.9rem;
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+  }
+
+  .trust-section h3 {
+    font-size: 1.25rem;
+  }
+
+  .badge {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .badge-icon {
+    font-size: 1.5rem;
+  }
+
+  .badge span:last-child {
+    font-size: 1rem;
+  }
+}
