@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LaptopFix Pro - Laptop Repair Service Website
 
 A modern, responsive React.js website for a door-to-door laptop repair service. Features comprehensive service showcase, laptop model support, customer testimonials, and secure contact methods.
@@ -275,3 +276,6 @@ For issues or questions:
 ---
 
 **Built with ❤️ for LaptopFix Pro**
+=======
+# LaptopRepairDoorStepService
+>>>>>>> a0d34c3b7bedfbd5a3bab73eed97bfa1b88957f0
