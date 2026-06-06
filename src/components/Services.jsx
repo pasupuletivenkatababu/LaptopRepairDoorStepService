@@ -68,7 +68,7 @@ const Services = () => {
 
         <div className="services-grid">
           {services.map((service, index) => (
-            <div key={service.id} className="service-card" style={{ animationDelay: `${index * 0.1}s` }}>
+            <div key={service.id} className="service-card">
               <div className="service-icon">{service.icon}</div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
@@ -87,28 +87,7 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="service-guarantee">
-          <div className="guarantee-item">
-            <span className="guarantee-icon">✓</span>
-            <h4>Quality Assured</h4>
-            <p>All repairs come with 30-day guarantee</p>
-          </div>
-          <div className="guarantee-item">
-            <span className="guarantee-icon">⚡</span>
-            <h4>Quick Turnaround</h4>
-            <p>Most repairs completed within 24 hours</p>
-          </div>
-          <div className="guarantee-item">
-            <span className="guarantee-icon">💰</span>
-            <h4>Affordable Pricing</h4>
-            <p>Transparent pricing with no hidden charges</p>
-          </div>
-          <div className="guarantee-item">
-            <span className="guarantee-icon">🏠</span>
-            <h4>Door-to-Door Service</h4>
-            <p>We come to your location for maximum convenience</p>
-          </div>
-        </div>
+        {/* Removed guarantee/badges per update request */}
       </div>
     </section>
   );

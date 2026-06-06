@@ -1,6 +1,6 @@
 .why-choose-us {
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  padding: 3rem 0;
+  background: #f4f7fb;
 }
 
 .reasons-grid {
@@ -16,8 +16,6 @@
   border-radius: 1rem;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
-  animation: fadeInUp 0.6s ease-out forwards;
-  opacity: 0;
   text-align: center;
 }
 
@@ -28,30 +26,6 @@
 
 .reason-card:hover .reason-icon {
   transform: scale(1.2) rotate(10deg);
-}
-
-.reason-card:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.reason-card:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.reason-card:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.reason-card:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.reason-card:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.reason-card:nth-child(6) {
-  animation-delay: 0.6s;
 }
 
 .reason-icon {
@@ -91,6 +65,102 @@
 .reason-details .dot {
   color: var(--accent-color);
   font-size: 0.75rem;
+}
+
+.contact-info-section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.contact-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+}
+
+.contact-card {
+  background: white;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
+}
+
+.contact-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.contact-card address,
+.hours-list,
+.coverage-list {
+  color: var(--text-gray);
+  line-height: 1.8;
+}
+
+.card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+}
+
+.contact-card a.btn {
+  margin-top: 1.25rem;
+  display: inline-block;
+}
+
+.hours-list > div,
+.emergency-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.hours-list > div:last-child,
+.emergency-row {
+  border-bottom: none;
+}
+
+.hours-list span,
+.coverage-list li {
+  font-size: 0.95rem;
+}
+
+.hours-list strong,
+.emergency-row strong {
+  color: var(--primary-color);
+}
+
+.coverage-card p {
+  margin-bottom: 1rem;
+  color: var(--text-gray);
+}
+
+.coverage-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1rem;
+}
+
+.coverage-list li {
+  padding: 0.85rem 1rem;
+  border-radius: 0.85rem;
+  background: #f4f9ff;
+  color: var(--text-dark);
+  border: 1px solid rgba(56, 189, 248, 0.15);
 }
 
 /* Stats Section */
@@ -277,5 +347,17 @@
 
   .badge span:last-child {
     font-size: 1rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .coverage-list {
+    grid-template-columns: 1fr;
   }
 }

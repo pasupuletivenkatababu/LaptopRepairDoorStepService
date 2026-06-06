@@ -4,9 +4,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import SearchBar from './components/SearchBar';
 import Services from './components/Services';
-import Models from './components/Models';
+
 import WhyChooseUs from './components/WhyChooseUs';
 import Testimonials from './components/Testimonials';
+
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -28,9 +29,10 @@ function App() {
       <Hero />
       <SearchBar />
       <Services />
-      <Models />
+      
       <WhyChooseUs />
       <Testimonials />
+     
       <ContactSection />
       <Footer />
     </div>

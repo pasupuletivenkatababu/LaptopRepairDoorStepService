@@ -1,19 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../Hero.css';
 
 const Hero = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   return (
     <section className="hero">
@@ -27,7 +21,7 @@ const Hero = () => {
       </div>
 
       <div className="container hero-content">
-        <div className={`hero-text ${isVisible ? 'fade-in-up' : ''}`}>
+        <div className="hero-text">
           <h1 className="hero-title">
             Expert Laptop Repair at Your <span className="highlight">Doorstep</span>
           </h1>
@@ -58,7 +52,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className={`hero-image ${isVisible ? 'slide-in-right' : ''}`}>
+        <div className="hero-image">
           <div className="laptop-illustration">
             <div className="laptop-screen"></div>
             <div className="laptop-body"></div>

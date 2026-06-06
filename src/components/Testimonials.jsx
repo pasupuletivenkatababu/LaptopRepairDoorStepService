@@ -130,11 +130,6 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="testimonial-cta">
-          <h3>Ready to Experience Our Service?</h3>
-          <button className="btn btn-primary btn-lg">Book Your Service Now</button>
-        </div>
       </div>
     </section>
   );

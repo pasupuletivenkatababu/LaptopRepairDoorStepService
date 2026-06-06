@@ -6,21 +6,34 @@
 
 :root {
   --primary-color: #0f172a;
+  --primary-dark: #020617; /* ADD */
   --secondary-color: #1e40af;
   --accent-color: #3b82f6;
   --accent-light: #60a5fa;
+
   --success-color: #10b981;
   --danger-color: #ef4444;
   --warning-color: #f59e0b;
-  --bg-light: #f8fafc;
+
+  --bg-light: #edf2f7;
   --bg-white: #ffffff;
+
+  --light-bg: #edf2f7; /* ADD */
+  --white: #ffffff; /* ADD */
+
+  --text-primary: #1e293b;
   --text-dark: #1f2937;
   --text-gray: #6b7280;
+  --text-secondary: #64748b; /* ADD */
+
   --border-color: #e5e7eb;
+
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow: var(--shadow-md); /* ADD */
+
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -44,17 +57,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   letter-spacing: -0.01em;
 }
 
 h3 {
-  font-size: 1.875rem;
+  font-size: 1.75rem;
 }
 
 h4 {
@@ -149,12 +162,12 @@ a:hover {
 }
 
 .section-spacing {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 @media (max-width: 768px) {
   .section-spacing {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 
   h1 {
@@ -174,7 +187,7 @@ a:hover {
 .card {
   background: white;
   border-radius: 0.75rem;
-  padding: 2rem;
+  padding: 1.75rem;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
 }
@@ -316,3 +329,342 @@ a:hover {
     transition-duration: 0.01ms !important;
   }
 }
+/* ====== CONTACT SECTION ====== */
+.contact-section {
+  background-color: var(--light-bg);
+  padding: 3rem 2rem;
+  position: relative;
+  z-index: 50;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-method-card {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.contact-method-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+}
+
+.method-icon-large {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-method-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.contact-detail {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.contact-link {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+  margin-top: auto;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  pointer-events: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-link:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-link:active {
+  transform: scale(0.98);
+}
+
+/* ====== LOCATION SECTION ====== */
+.location-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.location-info-card {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+.location-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.2);
+}
+
+.location-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.location-info-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.location-address {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.location-address strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.map-link {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+}
+
+.map-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+/* ====== LOCATION SECTION ====== */
+.location-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.location-info-card {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--bg-white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+.location-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.2);
+}
+
+.location-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.location-info-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.location-address {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.location-address strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.map-link {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition);
+}
+
+.map-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ====== SERVICE AREA CARD ====== */
+.service-area-card {
+  background-color: var(--bg-white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--secondary-color);
+  transition: var(--transition);
+}
+
+.service-area-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.service-area-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.area-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.areas-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.area-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem;
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.area-item:hover {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.area-icon {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.area-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* ====== HOURS SECTION ====== */
+.hours-section {
+  background: linear-gradient(135deg, rgba(225, 231, 229, 0.1), rgba(37, 99, 235, 0.1));
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.hours-section h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.service-hours {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.hour {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  border-top: 4px solid var(--accent-color);
+  transition: var(--transition);
+}
+
+.hour:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.day {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+

@@ -10,18 +10,6 @@ const WhyChooseUs = () => {
       details: ['Industry certified', 'Regular training', 'Expert knowledge']
     },
     {
-      icon: '⚡',
-      title: 'Quick Turnaround',
-      description: 'Most repairs completed within 24 hours with same-day diagnostics.',
-      details: ['Fast service', 'No waiting', 'Same-day fixes']
-    },
-    {
-      icon: '🏠',
-      title: 'Door-to-Door Service',
-      description: 'We come to your home or office - no need to go anywhere.',
-      details: ['Home service', 'Flexible timing', 'Zero hassle']
-    },
-    {
       icon: '💰',
       title: 'Transparent Pricing',
       description: 'No hidden charges, free diagnosis, and competitive rates.',
@@ -67,48 +55,8 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div className="stats-section">
-          <div className="stat">
-            <div className="stat-number">5000+</div>
-            <div className="stat-label">Happy Customers</div>
-          </div>
-          <div className="stat">
-            <div className="stat-number">10000+</div>
-            <div className="stat-label">Repairs Completed</div>
-          </div>
-          <div className="stat">
-            <div className="stat-number">99.8%</div>
-            <div className="stat-label">Customer Satisfaction</div>
-          </div>
-          <div className="stat">
-            <div className="stat-number">24/7</div>
-            <div className="stat-label">Customer Support</div>
-          </div>
-        </div>
-
-        {/* Trust Badges */}
-        <div className="trust-section">
-          <h3>Trusted By</h3>
-          <div className="trust-badges">
-            <div className="badge">
-              <span className="badge-icon">⭐</span>
-              <span>4.9/5 Stars</span>
-            </div>
-            <div className="badge">
-              <span className="badge-icon">✓</span>
-              <span>Verified Reviews</span>
-            </div>
-            <div className="badge">
-              <span className="badge-icon">🏅</span>
-              <span>Certified Service</span>
-            </div>
-            <div className="badge">
-              <span className="badge-icon">💎</span>
-              <span>Premium Quality</span>
-            </div>
-          </div>
-        </div>
+       
+       
       </div>
     </section>
   );

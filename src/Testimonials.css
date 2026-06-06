@@ -1,5 +1,5 @@
 .testimonials {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: #eef4fb;
 }
 
 .testimonials-carousel {
@@ -23,39 +23,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fadeOut 0.5s ease-out;
   opacity: 0;
 }
 
 .testimonial-slide.active {
-  animation: fadeIn 0.5s ease-out;
   opacity: 1;
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .testimonial-card {
   background: white;
-  padding: 2.5rem;
+  padding: 1.75rem;
   border-radius: 1rem;
-  box-shadow: var(--shadow-lg);
-  max-width: 600px;
+  box-shadow: var(--shadow-md);
+  max-width: 560px;
   width: 100%;
 }
 
@@ -91,18 +71,6 @@
 
 .rating .star {
   font-size: 1.2rem;
-  animation: starPop 0.3s ease-out;
-}
-
-@keyframes starPop {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 
 .testimonial-text {
@@ -207,16 +175,13 @@
 /* CTA Section */
 .testimonial-cta {
   text-align: center;
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  border-radius: 1rem;
-  color: white;
+  padding: 1.5rem 0 0;
+  background: transparent;
 }
 
-.testimonial-cta h3 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: white;
+.testimonial-cta .btn {
+  min-width: 220px;
+  border-radius: 0.75rem;
 }
 
 .testimonial-cta .btn {
