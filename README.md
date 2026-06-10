@@ -279,3 +279,12 @@ For issues or questions:
 =======
 # LaptopRepairDoorStepService
 >>>>>>> a0d34c3b7bedfbd5a3bab73eed97bfa1b88957f0
+>>>>>>>
+>>>>>>> ## License
+
+© 2026 Pasupuleti Venkata Babu. All rights reserved.
+
+This project is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+- Viewing is allowed
+- Copying, modifying, or commercial use is strictly prohibited
