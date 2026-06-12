@@ -278,13 +278,58 @@ For issues or questions:
 **Built with ❤️ for LaptopFix Pro**
 =======
 # LaptopRepairDoorStepService
+# Laptop Repair Door Step Service
+
+A responsive web application designed to help customers access professional laptop repair services at their doorstep. The project focuses on providing a user-friendly experience, clear service information, and easy customer communication.
+
+## Features
+
+* Responsive and mobile-friendly design
+* Professional service showcase
+* Contact and inquiry section
+* Service area coverage
+* Clean and modern user interface
+* Optimized performance and accessibility
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Responsive Web Design
+* Vercel Deployment
+
+## Live Demo
+
+https://laptop-repair-door-step-service.vercel.app/
+
+## GitHub Repository
+
+https://github.com/pasupuletivenkatababu/LaptopRepairDoorStepService
+
+## Author
+
+Venkatababu Pasupuleti
+
+Python Full Stack Developer | Generative AI Developer
+
+Skilled in Python, FastAPI, SQL, HTML, CSS, JavaScript, React, AI-powered application development, and modern web technologies.
+
+## Project Highlights
+
+* Designed and developed a responsive service website
+* Implemented a user-friendly interface for customer engagement
+* Focused on performance, usability, and accessibility
+* Deployed and maintained using Vercel
+
+## Future Enhancements
+
+* Online service booking system
+* Customer dashboard
+* Service request tracking
+* WhatsApp integration
+* AI-powered customer support chatbot
+* Admin management panel
+
 >>>>>>> a0d34c3b7bedfbd5a3bab73eed97bfa1b88957f0
 >>>>>>>
->>>>>>> ## License
-
-© 2026 Pasupuleti Venkata Babu. All rights reserved.
-
-This project is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
-
-- Viewing is allowed
-- Copying, modifying, or commercial use is strictly prohibited
