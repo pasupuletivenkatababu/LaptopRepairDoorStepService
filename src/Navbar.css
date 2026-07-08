@@ -1,18 +1,20 @@
 .navbar {
   position: sticky;
   top: 0;
-  background: white;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
   padding: 1rem 0;
   z-index: 1000;
   box-shadow: none;
   transition: all 0.3s ease;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid rgba(224, 231, 255, 0.5);
 }
 
 .navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95);
   box-shadow: var(--shadow-md);
   border-bottom-color: var(--border-color);
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
 }
 
 .navbar-container {
@@ -59,9 +61,10 @@
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: 3rem;
   align-items: center;
   margin: 0;
+  margin-left: 3rem;
 }
 
 .nav-links li a {
@@ -89,7 +92,7 @@
 
 .navbar-cta {
   white-space: nowrap;
-  margin-left: auto;
+  margin-left: 2rem;
 }
 
 /* Hamburger Menu */

@@ -23,31 +23,31 @@ const Hero = () => {
       <div className="container hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            Expert Laptop Repair at Your <span className="highlight">Doorstep</span>
+            Professional Laptop Repair at Your <span className="highlight">Doorstep</span>
           </h1>
           <p className="hero-subtitle">
-            Professional repair services for all laptop brands and models. Fast, reliable, and affordable solutions delivered right to your location.
+            Fast diagnosis, transparent pricing, and skilled technicians for all laptop brands and models.
           </p>
           <div className="hero-features">
             <div className="feature-item">
               <span className="feature-icon">⚡</span>
-              <span>Same-Day Service</span>
+              <span>Same-Day Support</span>
             </div>
             <div className="feature-item">
               <span className="feature-icon">🔒</span>
-              <span>100% Secure</span>
+              <span>Secure Handling</span>
             </div>
             <div className="feature-item">
               <span className="feature-icon">💯</span>
-              <span>Expert Technicians</span>
+              <span>Trusted Technicians</span>
             </div>
           </div>
           <div className="hero-buttons">
-            <button className="btn btn-primary btn-lg" onClick={() => scrollToSection('contact')}>
-              Book Service Now
+            <button className="btn btn-primary btn-lg" onClick={() => scrollToSection('services')}>
+              Get Service Now
             </button>
             <button className="btn btn-secondary btn-lg" onClick={() => scrollToSection('services')}>
-              Learn More
+              Explore Services
             </button>
           </div>
         </div>
@@ -57,7 +57,7 @@ const Hero = () => {
             <div className="laptop-screen"></div>
             <div className="laptop-body"></div>
             <div className="repair-tools">
-              <span className="tool tool-1">🔨</span>
+              <span className="tool tool-1">🔧</span>
               <span className="tool tool-2">⚙️</span>
               <span className="tool tool-3">🧰</span>
             </div>

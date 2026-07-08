@@ -66,12 +66,12 @@ const Testimonials = () => {
         {/* Testimonials Carousel */}
         <div className="testimonials-carousel">
           <div className="carousel-container">
-            <div className="carousel-wrapper">
-              {testimonials.map((testimonial, index) => (
-                <div
-                  key={testimonial.id}
-                  className={`testimonial-slide ${index === currentSlide ? 'active' : ''}`}
-                >
+            <div
+              className="carousel-wrapper"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            >
+              {testimonials.map((testimonial) => (
+                <div key={testimonial.id} className="testimonial-slide">
                   <div className="testimonial-card">
                     <div className="testimonial-header">
                       <span className="avatar">{testimonial.avatar}</span>

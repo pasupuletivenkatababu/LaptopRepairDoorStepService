@@ -1,10 +1,10 @@
 .contact {
-  background: #eef4fb;
+  background: linear-gradient(180deg, #e8f4ff 0%, #f8fbff 40%, #ffffff 70%, #f0f8ff 100%);
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-header h2 {
@@ -14,7 +14,7 @@
 }
 
 .section-header p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-gray);
 }
 
@@ -28,7 +28,7 @@
 
 .contact-method-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 0;
   border-top: 2px solid var(--border-color);
 }
@@ -36,8 +36,8 @@
 .method-item {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1.5rem;
+  padding: 1.5rem;
   border-right: 2px solid var(--border-color);
   transition: var(--transition);
 }
@@ -51,7 +51,7 @@
 }
 
 .method-icon-lg {
-  font-size: 3rem;
+  font-size: 2.5rem;
   flex-shrink: 0;
   min-width: 60px;
   text-align: center;
@@ -62,7 +62,7 @@
 }
 
 .method-content h3 {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
@@ -71,7 +71,7 @@
   display: block;
   color: var(--accent-color);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   text-decoration: none;
 }

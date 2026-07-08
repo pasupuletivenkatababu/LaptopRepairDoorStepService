@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Services.css';
+import ContactModal from './ContactModel';
 
 const Services = () => {
-  const scrollToContact = (serviceName) => {
-    if (typeof window !== 'undefined' && serviceName) {
-      window.localStorage.setItem('repairRequest', serviceName);
-    }
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState(null);
 
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openServiceModal = (service) => {
+    setSelectedService(service);
+    setIsModalOpen(true);
   };
 
   const services = [
@@ -80,7 +78,7 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              <button className="btn btn-outline" onClick={() => scrollToContact(service.title)}>
+              <button className="btn btn-outline" onClick={() => openServiceModal(service)}>
                 Request Repair
               </button>
             </div>
@@ -89,6 +87,20 @@ const Services = () => {
 
         {/* Removed guarantee/badges per update request */}
       </div>
+
+      {isModalOpen && selectedService && (
+        <ContactModal 
+          service={{
+            name: selectedService.title,
+            price: '₹1,999 - ₹4,999',
+            warranty: '30 Days Warranty'
+          }} 
+          onClose={() => {
+            setIsModalOpen(false);
+            setSelectedService(null);
+          }} 
+        />
+      )}
     </section>
   );
 };

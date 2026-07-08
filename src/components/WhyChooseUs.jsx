@@ -16,12 +16,6 @@ const WhyChooseUs = () => {
       details: ['Free diagnosis', 'Fixed pricing', 'No surprises']
     },
     {
-      icon: '🤖',
-      title: 'Instant Chat Support',
-      description: 'WhatsApp messages reach our repair team immediately and AI suggestions help you move faster.',
-      details: ['Instant WhatsApp alerts', 'Repair worker responds fast', 'AI guidance available']
-    },
-    {
       icon: '🛡️',
       title: 'Warranty Guaranteed',
       description: '30-day warranty on all repairs with parts guarantee.',
@@ -34,7 +28,7 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="section-header">
           <h2>Why Choose LaptopFix Pro?</h2>
-          <p>Industry-leading service with customer satisfaction at the core, plus instant WhatsApp alerts and AI-guided repair support.</p>
+          <p>Professional service with customer satisfaction at the core.</p>
         </div>
 
         <div className="reasons-grid">

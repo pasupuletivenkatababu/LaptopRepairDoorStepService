@@ -26,7 +26,7 @@ function ContactModal({ service, onClose }) {
   const handleEmailSubmit = (e) => {
     e.preventDefault();
     const subject = `Service Request: ${service.name}`;
-    const body = `Hi,\n\nI'm interested in ${service.name} service for my mobile.\n\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nLocation: ${formData.location}\nMessage: ${formData.message}\n\nPrice: ₹${service.price}\nWarranty: ${service.warranty}`;
+    const body = `Hi,\n\nI'm interested in ${service.name} for my laptop.\n\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}\nLocation: ${formData.location}\nMessage: ${formData.message}\n\nPrice: ${service.price}\nWarranty: ${service.warranty}`;
     
     window.location.href = `mailto:${businessEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     onClose();
