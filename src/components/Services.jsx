@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Services.css';
 import ContactModal from './ContactModel';
+import HardwareRepairImage from '../assets/Hardware.jpeg';
 
 const Services = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,13 +15,14 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      icon: '🔧',
+      image: HardwareRepairImage,
       title: 'Hardware Repair',
       description: 'Professional repair for motherboard, CPU, GPU, and other hardware components.',
       features: ['Motherboard repair', 'Power issues', 'Port repairs']
     },
     {
       id: 2,
+      image: HardwareRepairImage,
       icon: '💾',
       title: 'Software Issues',
       description: 'Troubleshoot OS problems, driver issues, and software conflicts.',
@@ -28,6 +30,7 @@ const Services = () => {
     },
     {
       id: 3,
+      image: HardwareRepairImage,
       icon: '🖥️',
       title: 'Screen Replacement',
       description: 'Quick and professional LCD/LED screen replacement for all brands.',
@@ -35,6 +38,7 @@ const Services = () => {
     },
     {
       id: 4,
+      image: HardwareRepairImage,
       icon: '🔋',
       title: 'Battery Replacement',
       description: 'Original and compatible battery replacement with warranty.',
@@ -42,13 +46,47 @@ const Services = () => {
     },
     {
       id: 5,
-      icon: '📁',
-      title: 'Data Recovery',
-      description: 'Recover lost data from damaged or non-responsive hard drives.',
-      features: ['HDD recovery', 'SSD recovery', 'File retrieval']
+      image: HardwareRepairImage,
+      icon: '⚡',
+      title: 'RAM Upgrade',
+      description: 'Boost laptop speed with expert RAM installation and compatibility testing.',
+      features: ['Memory upgrade', 'Compatibility check', 'Performance tuning']
     },
     {
       id: 6,
+      image: HardwareRepairImage,
+      icon: '💽',
+      title: 'SSD Upgrade',
+      description: 'Install fast SSD storage for quicker boots, app launch, and overall responsiveness.',
+      features: ['SSD installation', 'Data migration', 'Speed optimization']
+    },
+    {
+      id: 7,
+      image: HardwareRepairImage,
+      icon: '⌨️',
+      title: 'Keyboard Replacement',
+      description: 'Replace worn, broken, or unresponsive laptop keyboards with quality parts.',
+      features: ['Key replacement', 'Keyboard connector repair', 'Typing test']
+    },
+    {
+      id: 8,
+      image: HardwareRepairImage,
+      icon: '🛠️',
+      title: 'Hinges Replacement',
+      description: 'Fix loose or broken laptop hinges for stable screen movement and safe handling.',
+      features: ['Hinge replacement', 'Frame alignment', 'Sturdy support']
+    },
+    {
+      id: 9,
+      image: HardwareRepairImage,
+      icon: '🖥️',
+      title: 'Laptop Panel Replacement',
+      description: 'Replace damaged panels and casing to restore the laptop’s look and strength.',
+      features: ['Panel replacement', 'Case repair', 'Finish polishing']
+    },
+    {
+      id: 10,
+      image: HardwareRepairImage,
       icon: '✨',
       title: 'Cleaning & Maintenance',
       description: 'Deep cleaning, dust removal, and thermal paste application.',
@@ -67,7 +105,13 @@ const Services = () => {
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={service.id} className="service-card">
-              <div className="service-icon">{service.icon}</div>
+              <div className="service-media">
+                {service.image ? (
+                  <img src={service.image} alt={service.title} className="service-image" />
+                ) : (
+                  <div className="service-icon">{service.icon}</div>
+                )}
+              </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
               <ul className="service-features">

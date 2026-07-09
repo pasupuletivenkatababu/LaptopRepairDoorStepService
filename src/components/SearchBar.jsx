@@ -13,7 +13,11 @@ const SearchBar = () => {
     'Software Issues',
     'Screen Replacement',
     'Battery Replacement',
-    'Data Recovery',
+    'RAM Upgrade',
+    'SSD Upgrade',
+    'Keyboard Replacement',
+    'Hinges Replacement',
+    'Laptop Panel Replacement',
     'Cleaning & Maintenance'
   ];
 
@@ -22,12 +26,8 @@ const SearchBar = () => {
     'HP',
     'Lenovo',
     'ASUS',
-    'Apple',
     'Acer',
-    'Sony',
-    'Samsung',
     'MSI',
-    'Razer',
     'Other'
   ];
 
@@ -48,20 +48,10 @@ const SearchBar = () => {
     { id: 14, brand: 'ASUS', service: 'Hardware Repair', model: 'VivoBook 15', details: 'Keyboard replacement, USB port repair, and chassis fixes.', turnaround: '1-2 days' },
     { id: 15, brand: 'ASUS', service: 'Screen Replacement', model: 'ROG Laptop', details: 'High-refresh gaming display replacement and color profiling.', turnaround: '1-2 days' },
     { id: 16, brand: 'ASUS', service: 'Battery Replacement', model: 'ZenBook 14', details: 'Long-lasting battery replacement with charge cycle reset.', turnaround: '24 hours' },
-    { id: 17, brand: 'Apple', service: 'Software Issues', model: 'MacBook Air', details: 'macOS troubleshooting, app repair, and startup issue resolution.', turnaround: 'Same day' },
-    { id: 18, brand: 'Apple', service: 'Screen Replacement', model: 'MacBook Pro 13', details: 'Retina display replacement with Apple standard calibration.', turnaround: '1-2 days' },
-    { id: 19, brand: 'Apple', service: 'Hardware Repair', model: 'MacBook Air M1', details: 'Keyboard repair, battery service, and logic board diagnostics.', turnaround: '2-3 days' },
-    { id: 20, brand: 'Apple', service: 'Data Recovery', model: 'MacBook Pro', details: 'SSD data recovery and Time Machine restoration service.', turnaround: '2-3 days' },
-    { id: 21, brand: 'Acer', service: 'Data Recovery', model: 'Aspire 5', details: 'File recovery and drive repair for failed or corrupted storage.', turnaround: '2-3 days' },
-    { id: 22, brand: 'Acer', service: 'Screen Replacement', model: 'Aspire E15', details: 'LED display replacement and color adjustment.', turnaround: '24 hours' },
-    { id: 23, brand: 'Acer', service: 'Hardware Repair', model: 'TravelMate', details: 'Hinge repair, keyboard replacement, and port fixes.', turnaround: '1-2 days' },
-    { id: 24, brand: 'Sony', service: 'Battery Replacement', model: 'VAIO FE', details: 'Vintage Sony battery replacement with adapter included.', turnaround: '24 hours' },
-    { id: 25, brand: 'Samsung', service: 'Screen Replacement', model: 'Notebook 9', details: 'AMOLED and LCD display replacement for Samsung laptops.', turnaround: '1-2 days' },
-    { id: 26, brand: 'Samsung', service: 'Hardware Repair', model: 'Notebook 7', details: 'Keyboard and touchpad replacement for Samsung ultrabooks.', turnaround: '1-2 days' },
-    { id: 27, brand: 'MSI', service: 'Cleaning & Maintenance', model: 'GE66 Raider', details: 'Gaming laptop thermal cleaning and repasting service.', turnaround: 'Same day' },
-    { id: 28, brand: 'MSI', service: 'Hardware Repair', model: 'GS66 Stealth', details: 'Gaming hardware repair including GPU and cooling system.', turnaround: '1-2 days' },
-    { id: 29, brand: 'Razer', service: 'Hardware Repair', model: 'Blade Pro', details: 'Premium gaming laptop repair with RGB keyboard service.', turnaround: '2-3 days' },
-    { id: 30, brand: 'Razer', service: 'Screen Replacement', model: 'Blade 15', details: '4K display and high-refresh panel replacement.', turnaround: '2-3 days' }
+    { id: 17, brand: 'Acer', service: 'SSD Upgrade', model: 'Swift 3', details: 'SSD installation and system migration for faster performance.', turnaround: '24 hours' },
+    { id: 18, brand: 'Acer', service: 'Hardware Repair', model: 'Aspire 5', details: 'Hinge repair, keyboard replacement, and port troubleshooting.', turnaround: '1-2 days' },
+    { id: 19, brand: 'MSI', service: 'Cleaning & Maintenance', model: 'Prestige 15', details: 'Thermal cleaning, dust removal, and cooling optimization.', turnaround: 'Same day' },
+    { id: 20, brand: 'MSI', service: 'Hardware Repair', model: 'Modern 14', details: 'Laptop hardware diagnostics, port replacement, and screen repair.', turnaround: '1-2 days' }
   ];
 
   const runSearch = (brandValue = selectedBrand, serviceValue = selectedService, queryValue = searchTerm) => {

@@ -3,7 +3,7 @@ import '../Footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const whatsappLink = `https://api.whatsapp.com/send?phone=919166199299&text=${encodeURIComponent('Hi, I am interested in your laptop repair services. Please tell me about hardware repair, software issues, screen replacement, battery replacement, and data recovery options.')}`;
+  const whatsappLink = `https://api.whatsapp.com/send?phone=919166199299&text=${encodeURIComponent('Hi, I am interested in your laptop repair services. Please tell me about hardware repair, software issues, screen replacement, battery replacement, RAM upgrades, SSD upgrades, keyboard replacement, hinge replacement, and panel replacement.')}`;
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -34,7 +34,6 @@ const Footer = () => {
                 <h4>Quick Links</h4>
                 <ul className="footer-links">
                   <li><a href="#services">Our Services</a></li>
-                  <li><a href="#models">Laptop Models</a></li>
                   <li><a href="#why-us">Why Choose Us</a></li>
                   <li><a href="#testimonials">Customer Reviews</a></li>
                   <li><a href="#contact">Contact Us</a></li>
@@ -47,7 +46,11 @@ const Footer = () => {
                   <li><a href="#services">Hardware Repair</a></li>
                   <li><a href="#services">Software Issues</a></li>
                   <li><a href="#services">Screen Replacement</a></li>
-                  <li><a href="#services">Data Recovery</a></li>
+                  <li><a href="#services">RAM Upgrade</a></li>
+                  <li><a href="#services">SSD Upgrade</a></li>
+                  <li><a href="#services">Keyboard Replacement</a></li>
+                  <li><a href="#services">Hinges Replacement</a></li>
+                  <li><a href="#services">Laptop Panel Replacement</a></li>
                   <li><a href="#services">Maintenance</a></li>
                 </ul>
               </div>

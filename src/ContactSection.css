@@ -1,5 +1,5 @@
 .contact {
-  background: linear-gradient(180deg, #e8f4ff 0%, #f8fbff 40%, #ffffff 70%, #f0f8ff 100%);
+  background: #eef3f8;
 }
 
 .section-header {
@@ -143,13 +143,13 @@
 }
 
 .contact-form-section h3 {
-  color: white;
+  color: var(--primary-color);
   margin-bottom: 1.5rem;
 }
 
 .success-message {
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.5);
+  background: rgba(32, 180, 200, 0.1);
+  border: 1px solid rgba(32, 180, 200, 0.25);
   color: var(--primary-color);
   padding: 1rem;
   border-radius: 0.5rem;
