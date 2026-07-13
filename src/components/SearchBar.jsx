@@ -10,7 +10,7 @@ const SearchBar = () => {
   const [hasSearched, setHasSearched] = useState(false);
 
   const services = [
-    'Hardware Repair',
+    'Motherboard Repair',
     'Software Issues',
     'Screen Replacement',
     'Battery Replacement',

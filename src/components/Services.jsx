@@ -16,7 +16,7 @@ const Services = () => {
     {
       id: 1,
       image: HardwareRepairImage,
-      title: 'Hardware Repair',
+      title: 'Motherboard Repair',
       description: 'Professional repair for motherboard, CPU, GPU, and other hardware components.',
       features: ['Motherboard repair', 'Power issues', 'Port repairs']
     },
@@ -41,8 +41,8 @@ const Services = () => {
       image: HardwareRepairImage,
       icon: '🔋',
       title: 'Battery Replacement',
-      description: 'Original and compatible battery replacement with warranty.',
-      features: ['Battery replacement', 'Charging port fix', 'Power adapter service']
+      description: ' Perfect solution for fast battery draining, not charging, or a swollen battery.',
+      features: ['Original battery', 'OEM Quality Battery','Compatible Battery']
     },
     {
       id: 5,
@@ -91,6 +91,22 @@ const Services = () => {
       title: 'Cleaning & Maintenance',
       description: 'Deep cleaning, dust removal, and thermal paste application.',
       features: ['Dust cleaning', 'Cooling improvement', 'Preventive maintenance']
+    },
+    {
+      id: 11,
+      image: HardwareRepairImage,
+      icon: '🖥️',
+      title: 'Laptop CoolingFan Replacement',
+      description: 'Replace damaged panels and casing to restore the laptop’s look and strength.',
+      features: ['Panel replacement', 'Case repair', 'Finish polishing']
+    },
+    {
+      id: 12,
+      image: HardwareRepairImage,
+      icon: '🖥️',
+      title: 'Charging Port Replacement',
+      description: 'Replace damaged panels and casing to restore the laptop’s look and strength.',
+      features: ['Panel replacement', 'Case repair', 'Finish polishing']
     }
   ];
 

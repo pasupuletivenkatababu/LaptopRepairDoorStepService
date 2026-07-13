@@ -6,8 +6,6 @@ import SearchBar from './components/SearchBar';
 import Services from './components/Services';
 
 import WhyChooseUs from './components/WhyChooseUs';
-import Testimonials from './components/Testimonials';
-
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -29,10 +27,7 @@ function App() {
       <Hero />
       <SearchBar />
       <Services />
-      
       <WhyChooseUs />
-      <Testimonials />
-     
       <ContactSection />
       <Footer />
     </div>

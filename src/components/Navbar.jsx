@@ -23,7 +23,7 @@ const Navbar = ({ isScrolled }) => {
         <div className="navbar-brand">
           <div className="logo">
             <span className="logo-icon">🔧</span>
-            <span className="logo-text">LaptopFix Pro</span> 
+            <span className="logo-text">Laptop Service World</span> 
           </div>
         </div>
 
@@ -38,7 +38,6 @@ const Navbar = ({ isScrolled }) => {
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <li><a onClick={() => scrollToSection('services')}>Services</a></li>
           <li><a onClick={() => scrollToSection('why-us')}>Why Us</a></li>
-          <li><a onClick={() => scrollToSection('testimonials')}>Reviews</a></li>
           <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
         </ul>
 

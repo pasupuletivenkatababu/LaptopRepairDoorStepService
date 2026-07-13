@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Hero.css';
-import HeroImage from '../assets/kishu.jpeg';
+//import HeroImage from '../assets/kishu.jpeg';
+import HeroImage from '../assets/laptop.jpeg'
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -17,23 +18,11 @@ const Hero = () => {
           <h1 className="hero-title">
             Professional Laptop Repair at Your <span className="highlight">Doorstep</span>
           </h1>
-          <p className="hero-subtitle">
-            Fast diagnosis, transparent pricing, and skilled technicians for all laptop brands and repair issues.
-          </p>
-          <div className="hero-features">
-            <div className="feature-item">
-              <span className="feature-icon">⚡</span>
-              <span>Same-Day Support</span>
-            </div>
-            <div className="feature-item">
-              <span className="feature-icon">🔒</span>
-              <span>Secure Handling</span>
-            </div>
-            <div className="feature-item">
-              <span className="feature-icon">💯</span>
-              <span>Trusted Technicians</span>
-            </div>
-          </div>
+          <h1 className ="hero-subtitle1">
+            Free pickup and delivery, same-day support.
+          </h1>
+          
+          
           <div className="hero-buttons">
             <button className="btn btn-primary btn-lg" onClick={() => scrollToSection('services')}>
               Get Service Now

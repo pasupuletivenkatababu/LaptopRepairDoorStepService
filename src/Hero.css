@@ -39,6 +39,22 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.hero-subtitle1{
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 75;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle1 .highlight{ 
+    background: linear-gradient(120deg, #7fd8e9 0%, #20b4c8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+}
 
 .hero-subtitle {
   font-size: 1.08rem;
@@ -344,7 +360,8 @@
         rgba(10, 24, 58, 0.75),
         rgba(10, 24, 58, 0.75)
     ),
-    url("./assets/kishu.jpeg");
+    /*url("./assets/kishu.jpeg");*/
+    url("./assets//laptop.jpeg");
 
     background-size: cover;
     background-position: center;
