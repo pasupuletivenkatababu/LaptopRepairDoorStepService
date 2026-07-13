@@ -338,3 +338,20 @@
     font-size: 2rem;
   }
 }
+
+.hero {
+    background: linear-gradient(
+        rgba(10, 24, 58, 0.75),
+        rgba(10, 24, 58, 0.75)
+    ),
+    url("./assets/kishu.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}

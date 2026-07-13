@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../Searchbar.css";
+import FlowImage from "../assets/flow.jpeg";
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -122,77 +123,18 @@ const SearchBar = () => {
                 </select>
               </div>
 
-              <div className="form-group">
-                <label htmlFor="search">Model or Details</label>
-                <input
-                  id="search"
-                  type="text"
-                  placeholder="e.g., Dell XPS 13, HP Pavilion..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="form-control"
-                />
-              </div>
+
 
               <div className="form-group">
                 <button type="submit" className="btn btn-primary search-btn">
-                  <span>🔍</span> Search
+                  <span>🔍</span> Book Services
                 </button>
               </div>
             </div>
           </form>
 
-          {hasSearched && (
-            <div className="search-results">
-              <div className="results-header">
-                <h3>
-                  {searchResults.length > 0 ? 'Recommended Repair Solutions' : 'No matching repair solution found'}
-                </h3>
-                <p>
-                  {selectedBrand || selectedService || searchTerm
-                    ? `Showing matches for ${selectedBrand || 'any brand'} • ${selectedService || 'any service'} • ${searchTerm || 'all models'}`
-                    : 'Showing popular repair options'}
-                </p>
-              </div>
-
-              {searchResults.length > 0 ? (
-                <div className="result-list">
-                  {searchResults.map((solution) => (
-                    <div key={solution.id} className="result-card">
-                      <h4>{solution.brand} {solution.model}</h4>
-                      <p className="result-service">{solution.service}</p>
-                      <p>{solution.details}</p>
-                      <div className="result-meta">
-                        <span className="result-pill">Turnaround: {solution.turnaround}</span>
-                        <span className="result-pill">Expert support</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div className="no-results">
-                  <p>Try a different brand, service, or model name to see nearby repair options.</p>
-                </div>
-              )}
-            </div>
-          )}
-
-          <div className="popular-searches">
-            <span className="label">Popular searches:</span>
-            <div className="search-tags">
-              <button className="tag" onClick={() => handleQuickSearch('Dell', 'Screen Replacement', 'XPS 13')}>
-                Dell XPS Screen Repair
-              </button>
-              <button className="tag" onClick={() => handleQuickSearch('HP', 'Battery Replacement', 'Pavilion 15')}>
-                HP Battery Replacement
-              </button>
-              <button className="tag" onClick={() => handleQuickSearch('Lenovo', 'Hardware Repair', 'ThinkPad T14')}>
-                Lenovo Keyboard Fix
-              </button>
-              <button className="tag" onClick={() => handleQuickSearch('ASUS', 'Cleaning & Maintenance', 'ROG Zephyrus')}>
-                ASUS Cooling Fan
-              </button>
-            </div>
+          <div className="repair-flow">
+            <img src={FlowImage} alt="Laptop Repair Process" />
           </div>
         </div>
       </div>

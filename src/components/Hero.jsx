@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Hero.css';
+import HeroImage from '../assets/kishu.jpeg';
 
 const Hero = () => {
   const scrollToSection = (id) => {
