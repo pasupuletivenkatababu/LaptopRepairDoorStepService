@@ -53,22 +53,19 @@ function ContactSection() {
           {/* Business Location Card */}
           <div className="location-info-card">
             <div className="location-icon">📍</div>
-            <h3>Our Location</h3>
+            <h3>Office  Location</h3>
             <p className="location-address">
-              <strong>Kishor Laptop Service World</strong><br />
+              <strong>Laptop Service World</strong><br />
               Sirius Cabin, 4th Floor, Bizness Square Building<br />
               Beside Kotak Bank HITEC City, Madhapur<br />
               Hyderabad, Telangana 500081<br />
               India
             </p>
-            <a
-              href="https://maps.google.com/?q=Sirius+Cabin+Bizness+Square+Building+Beside+Kotak+Bank+HITEC+City+Madhapur+Hyderabad"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="map-link"
-            >
-              View on Google Maps
-            </a>
+            <br/>
+            
+              <strong> Work location </strong>
+              <p>KPHB NearBy Metro Station</p>
+           
           </div>
 
           {/* Service Area Coverage */}

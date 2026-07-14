@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="container footer-inner">
           <div className="footer-top">
             <div className="footer-brand">
-              <h4>LaptopFix Pro</h4>
+              <h4>Laptop Service World</h4>
               <p>
                 Professional door-to-door laptop repair service in Hyderabad.
                 Fast, reliable, and affordable solutions for all laptop brands.
@@ -35,7 +35,7 @@ const Footer = () => {
                 <ul className="footer-links">
                   <li><a href="#services">Our Services</a></li>
                   <li><a href="#why-us">Why Choose Us</a></li>
-                  <li><a href="#testimonials">Customer Reviews</a></li>
+                  {/*<li><a href="#testimonials">Customer Reviews</a></li>*/}
                   <li><a href="#contact">Contact Us</a></li>
                 </ul>
               </div>
@@ -43,7 +43,7 @@ const Footer = () => {
               <div className="footer-section">
                 <h4>Popular Services</h4>
                 <ul className="footer-links">
-                  <li><a href="#services">Hardware Repair</a></li>
+                  <li><a href="#services">Motherboard Repair</a></li>
                   <li><a href="#services">Software Issues</a></li>
                   <li><a href="#services">Screen Replacement</a></li>
                   <li><a href="#services">RAM Upgrade</a></li>
@@ -68,7 +68,7 @@ const Footer = () => {
                   </div>
                   <div className="info-item">
                     <span className="info-icon">📧</span>
-                    <a href="mailto:kishulaptop@gmail.com">kishulaptop@gmail.com</a>
+                    <a href="mailto:kishorlaptopserviceworld@gmail.com">kishorlaptopserviceworld@gmail.com</a>
                   </div>
                   <div className="info-item">
                     <span className="info-icon">📍</span>

@@ -18,7 +18,7 @@ const Services = () => {
       image: HardwareRepairImage,
       title: 'Motherboard Repair',
       price: '₹1,999',
-      warranty: '30 Days Warranty',
+      warranty: '1 Month Warranty',
       repairTime: '24 Hours',
       description: 'Professional repair for motherboard, CPU, GPU, and other hardware components.',
       features: ['Motherboard repair', 'Power issues', 'Port repairs']
@@ -40,7 +40,7 @@ const Services = () => {
       icon: '🖥️',
       title: 'Screen Replacement',
       price: '₹3,999',
-      warranty: '90 Days Warranty',
+      warranty: '3 Months Warranty',
       repairTime: '2 Hours',
       description: 'Quick and professional LCD/LED screen replacement for all brands.',
       features: ['LCD replacement', 'LED repair', 'Touch screen fix']

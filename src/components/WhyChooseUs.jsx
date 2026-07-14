@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
     <section id="why-us" className="why-choose-us section-spacing">
       <div className="container">
         <div className="section-header">
-          <h2>Why Choose LaptopFix Pro?</h2>
+          <h2>Why Choose Laptop Service world?</h2>
           <p>Professional service with customer satisfaction at the core.</p>
         </div>
 
