@@ -17,6 +17,9 @@ const Services = () => {
       id: 1,
       image: HardwareRepairImage,
       title: 'Motherboard Repair',
+      price: '₹1,999',
+      warranty: '30 Days Warranty',
+      repairTime: '24 Hours',
       description: 'Professional repair for motherboard, CPU, GPU, and other hardware components.',
       features: ['Motherboard repair', 'Power issues', 'Port repairs']
     },
@@ -25,6 +28,9 @@ const Services = () => {
       image: HardwareRepairImage,
       icon: '💾',
       title: 'Software Issues',
+      price: '₹999',
+      warranty: 'No Warranty',
+      repairTime: '2 Hours',
       description: 'Troubleshoot OS problems, driver issues, and software conflicts.',
       features: ['OS installation', 'Driver updates', 'Malware removal']
     },
@@ -33,6 +39,9 @@ const Services = () => {
       image: HardwareRepairImage,
       icon: '🖥️',
       title: 'Screen Replacement',
+      price: '₹3,999',
+      warranty: '90 Days Warranty',
+      repairTime: '2 Hours',
       description: 'Quick and professional LCD/LED screen replacement for all brands.',
       features: ['LCD replacement', 'LED repair', 'Touch screen fix']
     },
@@ -41,14 +50,20 @@ const Services = () => {
       image: HardwareRepairImage,
       icon: '🔋',
       title: 'Battery Replacement',
-      description: ' Perfect solution for fast battery draining, not charging, or a swollen battery.',
-      features: ['Original battery', 'OEM Quality Battery','Compatible Battery']
+      price: '₹1,999',
+      warranty: '6 Months - 1 Year Warranty',
+      repairTime: '1-2 Hours',
+      description: 'Perfect solution for fast battery draining, not charging, or a swollen battery.',
+      features: ['Original battery', 'OEM Quality Battery', 'Compatible Battery']
     },
     {
       id: 5,
       image: HardwareRepairImage,
       icon: '⚡',
       title: 'RAM Upgrade',
+      price: '₹2,999',
+      warranty: '2 Years Warranty',
+      repairTime: '1-2 Hours',
       description: 'Boost laptop speed with expert RAM installation and compatibility testing.',
       features: ['Memory upgrade', 'Compatibility check', 'Performance tuning']
     },
@@ -57,6 +72,9 @@ const Services = () => {
       image: HardwareRepairImage,
       icon: '💽',
       title: 'SSD Upgrade',
+      price: '₹5,999',
+      warranty: '5 Years Warranty',
+      repairTime: '1-2 Hours',
       description: 'Install fast SSD storage for quicker boots, app launch, and overall responsiveness.',
       features: ['SSD installation', 'Data migration', 'Speed optimization']
     },
@@ -65,6 +83,9 @@ const Services = () => {
       image: HardwareRepairImage,
       icon: '⌨️',
       title: 'Keyboard Replacement',
+      price: '₹1,999',
+      warranty: '3 Months Warranty',
+      repairTime: '3 Hours',
       description: 'Replace worn, broken, or unresponsive laptop keyboards with quality parts.',
       features: ['Key replacement', 'Keyboard connector repair', 'Typing test']
     },
@@ -73,6 +94,9 @@ const Services = () => {
       image: HardwareRepairImage,
       icon: '🛠️',
       title: 'Hinges Replacement',
+      price: '₹2,500',
+      warranty: '1 Month Warranty',
+      repairTime: '3 Hours',
       description: 'Fix loose or broken laptop hinges for stable screen movement and safe handling.',
       features: ['Hinge replacement', 'Frame alignment', 'Sturdy support']
     },
@@ -81,6 +105,9 @@ const Services = () => {
       image: HardwareRepairImage,
       icon: '🖥️',
       title: 'Laptop Panel Replacement',
+      price: '₹2,999',
+      warranty: 'No Warranty',
+      repairTime: '3 Hours',
       description: 'Replace damaged panels and casing to restore the laptop’s look and strength.',
       features: ['Panel replacement', 'Case repair', 'Finish polishing']
     },
@@ -89,24 +116,33 @@ const Services = () => {
       image: HardwareRepairImage,
       icon: '✨',
       title: 'Cleaning & Maintenance',
+      price: '₹999',
+      warranty: 'No Warranty',
+      repairTime: '2 Hours',
       description: 'Deep cleaning, dust removal, and thermal paste application.',
       features: ['Dust cleaning', 'Cooling improvement', 'Preventive maintenance']
     },
     {
       id: 11,
       image: HardwareRepairImage,
-      icon: '🖥️',
-      title: 'Laptop CoolingFan Replacement',
-      description: 'Replace damaged panels and casing to restore the laptop’s look and strength.',
-      features: ['Panel replacement', 'Case repair', 'Finish polishing']
+      icon: '🔌',
+      title: 'Charging Portable',
+      price: '₹1,999',
+      warranty: 'No Warranty',
+      repairTime: '3 Hours',
+      description: 'Portable charging and power port servicing for laptops that won’t charge.',
+      features: ['Charging repair', 'Port replacement', 'Power diagnostics']
     },
     {
       id: 12,
       image: HardwareRepairImage,
-      icon: '🖥️',
-      title: 'Charging Port Replacement',
-      description: 'Replace damaged panels and casing to restore the laptop’s look and strength.',
-      features: ['Panel replacement', 'Case repair', 'Finish polishing']
+      icon: '🌀',
+      title: 'Laptop Cooling Fan Replacement',
+      price: '₹1,500',
+      warranty: 'No Warranty',
+      repairTime: '2 Hours',
+      description: 'Replace faulty cooling fans to restore airflow and reduce overheating.',
+      features: ['Fan replacement', 'Thermal cleaning', 'Cooling optimization']
     }
   ];
 
@@ -150,11 +186,7 @@ const Services = () => {
 
       {isModalOpen && selectedService && (
         <ContactModal 
-          service={{
-            name: selectedService.title,
-            price: '₹1,999 - ₹4,999',
-            warranty: '30 Days Warranty'
-          }} 
+          service={selectedService}
           onClose={() => {
             setIsModalOpen(false);
             setSelectedService(null);

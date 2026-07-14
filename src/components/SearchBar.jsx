@@ -1,25 +1,88 @@
 import React, { useState } from 'react';
 import "../Searchbar.css";
 import FlowImage from "../assets/flow.jpeg";
+import ContactModal from './ContactModel';
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedService, setSelectedService] = useState('');
   const [selectedBrand, setSelectedBrand] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-  const [hasSearched, setHasSearched] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedModalService, setSelectedModalService] = useState(null);
 
   const services = [
-    'Motherboard Repair',
-    'Software Issues',
-    'Screen Replacement',
-    'Battery Replacement',
-    'RAM Upgrade',
-    'SSD Upgrade',
-    'Keyboard Replacement',
-    'Hinges Replacement',
-    'Laptop Panel Replacement',
-    'Cleaning & Maintenance'
+    {
+      title: 'Motherboard Repair',
+      price: '₹1,999',
+      warranty: '30 Days Warranty',
+      repairTime: '24 Hours'
+    },
+    {
+      title: 'Software Issues',
+      price: '₹999',
+      warranty: 'No Warranty',
+      repairTime: '2 Hours'
+    },
+    {
+      title: 'Screen Replacement',
+      price: '₹3,999',
+      warranty: '90 Days Warranty',
+      repairTime: '2 Hours'
+    },
+    {
+      title: 'Battery Replacement',
+      price: '₹1,999',
+      warranty: '6 Months - 1 Year Warranty',
+      repairTime: '1-2 Hours'
+    },
+    {
+      title: 'RAM Upgrade',
+      price: '₹2,999',
+      warranty: '2 Years Warranty',
+      repairTime: '1-2 Hours'
+    },
+    {
+      title: 'SSD Upgrade',
+      price: '₹5,999',
+      warranty: '5 Years Warranty',
+      repairTime: '1-2 Hours'
+    },
+    {
+      title: 'Keyboard Replacement',
+      price: '₹1,999',
+      warranty: '3 Months Warranty',
+      repairTime: '3 Hours'
+    },
+    {
+      title: 'Hinges Replacement',
+      price: '₹2,500',
+      warranty: '1 Month Warranty',
+      repairTime: '3 Hours'
+    },
+    {
+      title: 'Laptop Panel Replacement',
+      price: '₹2,999',
+      warranty: 'No Warranty',
+      repairTime: '3 Hours'
+    },
+    {
+      title: 'Cleaning & Maintenance',
+      price: '₹999',
+      warranty: 'No Warranty',
+      repairTime: '2 Hours'
+    },
+    {
+      title: 'Charging Portable',
+      price: '₹1,999',
+      warranty: 'No Warranty',
+      repairTime: '3 Hours'
+    },
+    {
+      title: 'Laptop Cooling Fan Replacement',
+      price: '₹1,500',
+      warranty: 'No Warranty',
+      repairTime: '2 Hours'
+    }
   ];
 
   const brands = [
@@ -74,14 +137,17 @@ const SearchBar = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    runSearch();
-  };
-
-  const handleQuickSearch = (brand, service, query) => {
-    setSelectedBrand(brand);
-    setSelectedService(service);
-    setSearchTerm(query);
-    runSearch(brand, service, query);
+    const serviceData = services.find((service) => service.title === selectedService);
+    setSelectedModalService(
+      serviceData || {
+        title: 'Laptop Repair Service',
+        price: 'Starting from ₹999',
+        warranty: 'Varies by service',
+        repairTime: 'Varies by issue',
+        description: 'Select a service above to get an exact price, warranty, and repair time.'
+      }
+    );
+    setIsModalOpen(true);
   };
 
   return (
@@ -118,7 +184,7 @@ const SearchBar = () => {
                 >
                   <option value="">-- Choose Service --</option>
                   {services.map((service) => (
-                    <option key={service} value={service}>{service}</option>
+                    <option key={service.title} value={service.title}>{service.title}</option>
                   ))}
                 </select>
               </div>
@@ -136,6 +202,16 @@ const SearchBar = () => {
           <div className="repair-flow">
             <img src={FlowImage} alt="Laptop Repair Process" />
           </div>
+
+          {isModalOpen && selectedModalService && (
+            <ContactModal
+              service={selectedModalService}
+              onClose={() => {
+                setIsModalOpen(false);
+                setSelectedModalService(null);
+              }}
+            />
+          )}
         </div>
       </div>
     </section>

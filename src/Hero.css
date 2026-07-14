@@ -93,6 +93,50 @@
   flex-wrap: wrap;
 }
 
+.hero-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.35rem;
+}
+
+.hero-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 25px rgba(2, 6, 23, 0.16);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.hero-contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.24);
+}
+
+.hero-contact-link.email-link {
+  background: rgba(125, 211, 252, 0.18);
+}
+
+.hero-contact-link.whatsapp-link {
+  background: rgba(37, 211, 102, 0.2);
+}
+
+.hero-contact-link.phone-link {
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.hero-contact-icon {
+  font-size: 1rem;
+}
+
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -169,14 +213,25 @@
 
 .method-buttons {
   display: grid;
-  gap: 0.85rem;
-}
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
 
-.method-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.85rem;
+  .service-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-badge {
+    background: rgba(59, 130, 246, 0.12);
+    color: var(--secondary-color);
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 700;
   width: 100%;
   padding: 0.95rem 1rem;
   border: 1px solid #e2e8f0;
@@ -187,6 +242,16 @@
   transition: var(--transition);
 }
 
+.method-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 1.1rem 0.9rem;
+  text-align: center;
+}
+
 .method-btn:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -195,44 +260,24 @@
 }
 
 .method-icon {
-  font-size: 1.35rem;
+  font-size: 1.7rem;
+}
+
+.method-name,
+.method-desc {
+  display: block;
+  width: 100%;
 }
 
 .method-name {
-  flex: 1;
+  font-size: 0.98rem;
   font-weight: 700;
-  color: var(--primary-color);
 }
 
 .method-desc {
-  color: var(--text-gray);
-  font-size: 0.9rem;
-}
-
-.contact-form {
-  display: grid;
-  gap: 1rem;
-}
-
-.form-group {
-  display: grid;
-  gap: 0.4rem;
-}
-
-.form-group label {
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.8rem 0.95rem;
-  border: 1px solid #dbe3f0;
-  border-radius: 0.8rem;
-  font: inherit;
-  background: #f8fafc;
-  color: var(--text-dark);
+  font-size: 0.84rem;
+  color: rgba(51, 65, 85, 0.8);
+  margin-top: -0.15rem;
 }
 
 .form-group textarea {
@@ -312,6 +357,16 @@
 
   .hero-buttons {
     flex-direction: column;
+  }
+
+  .hero-contact-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-contact-link {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-trust {
