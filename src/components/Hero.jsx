@@ -33,9 +33,9 @@ const Hero = () => {
           </div>
 
           <div className="hero-contact-links" aria-label="Contact options">
-            <a href="mailto:kishorlaptopserviceworld@gmail.com" className="hero-contact-link email-link">
-              <span className="hero-contact-icon">✉️</span>
-              <span className="hero-contact-label">Email</span>
+            <a href="tel:+919166199299" className="hero-contact-link phone-link">
+              <span className="hero-contact-icon">📞</span>
+              <span className="hero-contact-label">Phone Call</span>
             </a>
             <a
               href="https://wa.me/919166199299?text=Hi%2C%20I%20need%20laptop%20repair%20help."
@@ -46,9 +46,9 @@ const Hero = () => {
               <span className="hero-contact-icon">💬</span>
               <span className="hero-contact-label">WhatsApp</span>
             </a>
-            <a href="tel:+919166199299" className="hero-contact-link phone-link">
-              <span className="hero-contact-icon">📞</span>
-              <span className="hero-contact-label">Phone Call</span>
+            <a href="mailto:kishorlaptopserviceworld@gmail.com" className="hero-contact-link email-link">
+              <span className="hero-contact-icon">✉️</span>
+              <span className="hero-contact-label">Email</span>
             </a>
           </div>
         </div>

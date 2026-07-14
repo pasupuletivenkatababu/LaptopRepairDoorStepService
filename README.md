@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# LaptopFix Pro - Laptop Repair Service Website
+# Laptop Service World - Laptop Repair Service Website
 
 A modern, responsive React.js website for a door-to-door laptop repair service. Features comprehensive service showcase, laptop model support, customer testimonials, and secure contact methods.
 
@@ -60,8 +60,9 @@ src/
 
 ### Step 1: Create React App
 ```bash
-npx create-react-app laptopfix-pro
-cd laptopfix-pro
+# You can create a new React app (optional):
+npx create-react-app laptop-service-world
+cd laptop-service-world
 ```
 
 ### Step 2: Copy Files
@@ -241,7 +242,7 @@ href="tel:+919876543210"
 ### Email Integration
 ```javascript
 // Opens email client
-href="mailto:support@laptopfixpro.com?subject=Laptop%20Repair%20Service"
+href="mailto:kishorlaptopserviceworld@gmail.com?subject=Laptop%20Repair%20Service"
 ```
 
 ## 🐛 Troubleshooting
@@ -275,7 +276,7 @@ For issues or questions:
 
 ---
 
-**Built with ❤️ for LaptopFix Pro**
+**Built with ❤️ for Laptop Service World**
 =======
 # LaptopRepairDoorStepService
 # Laptop Repair Door Step Service

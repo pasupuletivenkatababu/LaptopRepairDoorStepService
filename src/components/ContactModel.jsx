@@ -69,12 +69,12 @@ function ContactModal({ service, onClose }) {
 
             <div className="method-buttons">
               <button
-                className="method-btn email-btn"
-                onClick={() => setContactMethod('email')}
+                className="method-btn phone-btn"
+                onClick={() => setContactMethod('phone')}
               >
-                <span className="method-icon">📧</span>
-                <span className="method-name">Email</span>
-                <span className="method-desc">Send us details</span>
+                <span className="method-icon">📞</span>
+                <span className="method-name">Phone Call</span>
+                <span className="method-desc">Direct call</span>
               </button>
 
               <button
@@ -87,12 +87,12 @@ function ContactModal({ service, onClose }) {
               </button>
 
               <button
-                className="method-btn phone-btn"
-                onClick={() => setContactMethod('phone')}
+                className="method-btn email-btn"
+                onClick={() => setContactMethod('email')}
               >
-                <span className="method-icon">📞</span>
-                <span className="method-name">Phone Call</span>
-                <span className="method-desc">Direct call</span>
+                <span className="method-icon">📧</span>
+                <span className="method-name">Email</span>
+                <span className="method-desc">Send us details</span>
               </button>
             </div>
           </div>

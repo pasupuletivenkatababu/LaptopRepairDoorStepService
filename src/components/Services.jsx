@@ -2,6 +2,18 @@ import React, { useState } from 'react';
 import '../Services.css';
 import ContactModal from './ContactModel';
 import HardwareRepairImage from '../assets/Hardware.jpeg';
+import SoftwareImage from '../assets/software issue.jpeg';
+import ScreenImage from '../assets/Screen Replace.jpeg';
+import BatteryImage from '../assets/Battery Replace.jpeg';
+import RamImage from '../assets/Ram Replace.jpeg';
+import SSDImage from '../assets/SSD Replace.jpeg';
+import KeyboardImage from '../assets/Keybroad.jpeg';
+import HingesImage from '../assets/Hinges.jpeg';
+import PanelImage from '../assets/panel.jpeg';
+import CleaningImage from '../assets/cleaning.jpeg';
+import ChargingImage from '../assets/charging portable.jpeg';
+import CoolingImage from '../assets/coolingfan.jpeg';
+
 
 const Services = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,7 +37,7 @@ const Services = () => {
     },
     {
       id: 2,
-      image: HardwareRepairImage,
+      image: SoftwareImage,
       icon: '💾',
       title: 'Software Issues',
       price: '₹999',
@@ -36,7 +48,7 @@ const Services = () => {
     },
     {
       id: 3,
-      image: HardwareRepairImage,
+      image: ScreenImage,
       icon: '🖥️',
       title: 'Screen Replacement',
       price: '₹3,999',
@@ -47,7 +59,7 @@ const Services = () => {
     },
     {
       id: 4,
-      image: HardwareRepairImage,
+      image: BatteryImage,
       icon: '🔋',
       title: 'Battery Replacement',
       price: '₹1,999',
@@ -58,7 +70,7 @@ const Services = () => {
     },
     {
       id: 5,
-      image: HardwareRepairImage,
+      image: RamImage,
       icon: '⚡',
       title: 'RAM Upgrade',
       price: '₹2,999',
@@ -69,7 +81,7 @@ const Services = () => {
     },
     {
       id: 6,
-      image: HardwareRepairImage,
+      image: SSDImage,
       icon: '💽',
       title: 'SSD Upgrade',
       price: '₹5,999',
@@ -80,7 +92,7 @@ const Services = () => {
     },
     {
       id: 7,
-      image: HardwareRepairImage,
+      image: KeyboardImage,
       icon: '⌨️',
       title: 'Keyboard Replacement',
       price: '₹1,999',
@@ -91,7 +103,7 @@ const Services = () => {
     },
     {
       id: 8,
-      image: HardwareRepairImage,
+      image: HingesImage,
       icon: '🛠️',
       title: 'Hinges Replacement',
       price: '₹2,500',
@@ -102,7 +114,7 @@ const Services = () => {
     },
     {
       id: 9,
-      image: HardwareRepairImage,
+      image: PanelImage,
       icon: '🖥️',
       title: 'Laptop Panel Replacement',
       price: '₹2,999',
@@ -113,7 +125,7 @@ const Services = () => {
     },
     {
       id: 10,
-      image: HardwareRepairImage,
+      image: CleaningImage,
       icon: '✨',
       title: 'Cleaning & Maintenance',
       price: '₹999',
@@ -124,7 +136,7 @@ const Services = () => {
     },
     {
       id: 11,
-      image: HardwareRepairImage,
+      image: ChargingImage,
       icon: '🔌',
       title: 'Charging Portable',
       price: '₹1,999',
@@ -135,7 +147,7 @@ const Services = () => {
     },
     {
       id: 12,
-      image: HardwareRepairImage,
+      image: CoolingImage,
       icon: '🌀',
       title: 'Laptop Cooling Fan Replacement',
       price: '₹1,500',

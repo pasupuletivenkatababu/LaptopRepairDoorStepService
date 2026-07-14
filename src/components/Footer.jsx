@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-bottom">
-            <p>&copy; {currentYear} LaptopFix Pro. All rights reserved.</p>
+            <p>&copy; {currentYear} Laptop Service World. All rights reserved.</p>
             <div className="footer-meta">
               <a href="#privacy">Privacy Policy</a>
               <span className="separator">|</span>
