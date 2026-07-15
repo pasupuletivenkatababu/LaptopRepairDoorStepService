@@ -1,7 +1,4 @@
 import React from 'react';
-import phoneIcon from '../assets/icons/phone.svg';
-import whatsappIcon from '../assets/icons/whatsapp.svg';
-import emailIcon from '../assets/icons/email.svg';
 
 function ContactSection() {
   return (
